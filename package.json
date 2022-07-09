@@ -1,15 +1,15 @@
 {
-  "name":             "@noxy/ellipsis-text",
+  "name":             "@noxy/react-ellipsis-text",
   "author":           "oscelest",
   "version":          "0.1.0",
   "description":      "A text element for handling text that should be shown with ellipsis if overflowing a single line.",
   "license":          "MIT",
   "repository":       {
     "type": "git",
-    "url":  "git@github.com:oscelest/ellipsis-text.git"
+    "url":  "git@github.com:oscelest/react-ellipsis-text.git"
   },
   "bugs":             {
-    "url": "https://github.com/oscelest/ellipsis-text/issues"
+    "url": "https://github.com/oscelest/react-ellipsis-text/issues"
   },
   "publishConfig":    {
     "access": "public"
