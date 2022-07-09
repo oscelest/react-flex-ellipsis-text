@@ -3,7 +3,7 @@
   flex:    0 1 auto;
 }
 
-.ellipsis-text-wrapper {
+.ellipsis-text > * {
   display:       block;
   min-width:     0;
   text-overflow: ellipsis;

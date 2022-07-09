@@ -22,7 +22,7 @@ function EllipsisText(props: EllipsisTextProps) {
 
   return (
     <div className={classes.join(" ")} title={title}>
-        <span ref={ref_element} className={"ellipsis-text-wrapper"}>
+        <span ref={ref_element}>
           {props.children}
         </span>
     </div>
