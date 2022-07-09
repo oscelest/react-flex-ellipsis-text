@@ -3,7 +3,7 @@
   flex:    0 1 auto;
 }
 
-> span {
+.ellipsis-text-wrapper {
   display:       block;
   min-width:     0;
   text-overflow: ellipsis;
