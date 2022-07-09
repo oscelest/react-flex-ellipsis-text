@@ -1,0 +1,12 @@
+.ellipsis-text {
+  display: flex;
+  flex:    0 1 auto;
+}
+
+> span {
+  display:       block;
+  min-width:     0;
+  text-overflow: ellipsis;
+  white-space:   nowrap;
+  overflow:      hidden;
+}
