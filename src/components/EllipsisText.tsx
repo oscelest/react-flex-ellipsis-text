@@ -4,6 +4,7 @@ import "./EllipsisText.css";
 function EllipsisText(props: EllipsisTextProps) {
   const [show_title, setShowTitle] = useState<boolean>(false);
   const ref_element = useRef<HTMLDivElement>(null);
+  const title = show_title && typeof props.children === "string" ? props.children : "";
 
   useEffect(() => {
     if (!ref_element.current) throw new Error("Ellipsis text 'ref_element' is not being rendered.");
@@ -20,7 +21,7 @@ function EllipsisText(props: EllipsisTextProps) {
   if (props.className) classes.push(props.className);
 
   return (
-    <div className={classes.join(" ")} title={show_title ? props.children : ""}>
+    <div className={classes.join(" ")} title={title}>
         <span ref={ref_element}>
           {props.children}
         </span>
@@ -34,7 +35,7 @@ function shouldShowTitle(element?: Element | null) {
 }
 
 export interface EllipsisTextProps {
-  children?: string;
+  children?: string | never[];
   className?: string;
 }
 
