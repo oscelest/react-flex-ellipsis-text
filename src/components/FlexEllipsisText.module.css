@@ -2,7 +2,7 @@
   display: flex !important;
 }
 
-.Component:global(.ellipsis-text > *) {
+.Component:global(.ellipsis-text > span) {
   min-width:     0 !important;
   text-overflow: ellipsis !important;
   white-space:   nowrap !important;

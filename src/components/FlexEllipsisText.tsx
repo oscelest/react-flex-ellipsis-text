@@ -2,11 +2,11 @@ import React, {HTMLProps, useEffect, useRef, useState} from "react";
 import Style from "./FlexEllipsisText.module.css";
 
 export function FlexEllipsisText(props: EllipsisTextProps) {
-  let {children, className, ...component_props} = props;
+  let {children, className, showTitle, ...component_props} = props;
   
   const [show_title, setShowTitle] = useState<boolean>(false);
   const ref_element = useRef<HTMLDivElement>(null);
-  const title = show_title && typeof children === "string" ? children : undefined;
+  const title = showTitle !== false && show_title && typeof children === "string" ? children : undefined;
   
   useEffect(
     () => {
@@ -41,6 +41,7 @@ function shouldShowTitle(element?: Element | null) {
 
 export interface EllipsisTextProps extends HTMLProps<HTMLDivElement> {
   children?: string
+  showTitle?: boolean
 }
 
 export default FlexEllipsisText;
