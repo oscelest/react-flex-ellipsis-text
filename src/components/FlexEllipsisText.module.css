@@ -1,0 +1,11 @@
+.Component:global(.ellipsis-text) {
+  display: flex !important;
+}
+
+.Component:global(.ellipsis-text > *) {
+  min-width:     0 !important;
+  text-overflow: ellipsis !important;
+  white-space:   nowrap !important;
+  overflow:      hidden !important;
+}
+
