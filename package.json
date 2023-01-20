@@ -1,14 +1,14 @@
 {
-  "name":             "@noxy/react-flex-ellipsis-text",
-  "author":           "oscelest",
-  "version":          "0.2.1",
-  "description":      "A component creating a flexbox element with the 'text-overflow: ellipsis' attribute and adds a tooltip to the text once it overflows.",
-  "license":          "MIT",
-  "repository":       {
+  "name": "@noxy/react-flex-ellipsis-text",
+  "author": "oscelest",
+  "version": "1.0.0",
+  "description": "A component creating a flexbox element with the 'text-overflow: ellipsis' attribute and adds a tooltip to the text once it overflows.",
+  "license": "MIT",
+  "repository": {
     "type": "git",
-    "url":  "git@github.com:oscelest/react-flex-ellipsis-text.git"
+    "url": "git@github.com:oscelest/react-flex-ellipsis-text.git"
   },
-  "bugs":             {
+  "bugs": {
     "url": "https://github.com/oscelest/react-flex-ellipsis-text/issues"
   },
   "publishConfig":    {
