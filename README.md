@@ -46,9 +46,9 @@ Determines if the tooltip title should be shown once text overflows and becomes 
 
 ## Styling
 
-Any CSS property marked as !important, is important and should not be changed. Changing them can break component functionality.
-
-The following is a list of important properties:
+The following are a list of properties which are designated as important. 
+To preserve component functionality, these should not be changed. 
+If you do need to change them however, please be advised that the component might stop working as intended.
 
 ```css
 .ellipsis-text {
