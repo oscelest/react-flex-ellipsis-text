@@ -13,7 +13,7 @@ export function FlexEllipsisText(props: EllipsisTextProps) {
       if (!ref_element.current) {
         throw new Error("Ellipsis text 'ref_element' is not being rendered.");
       }
-
+  
       const observer = new ResizeObserver(change_list => setShowTitle(change_list.every(change => shouldShowTitle(change.target))));
       observer.observe(ref_element.current, {box: "content-box"});
   
@@ -40,8 +40,8 @@ function shouldShowTitle(element?: Element | null) {
 }
 
 export interface EllipsisTextProps extends HTMLProps<HTMLDivElement> {
-  children?: string
-  showTitle?: boolean
+  children?: string;
+  showTitle?: boolean;
 }
 
 export default FlexEllipsisText;
